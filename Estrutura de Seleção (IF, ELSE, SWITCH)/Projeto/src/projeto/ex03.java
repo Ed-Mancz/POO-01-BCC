@@ -14,13 +14,12 @@ public class ex03 {
         while(true){
             System.out.println("F ou M: ");
             String choice = scan.next();
-            String choiice = choice.toUpperCase();
-            System.out.println("ESCOLHA: "+ choice);
+            System.out.println("ESCOLHA: "+ choice + "...");
             
-            if(choiice == "F"){
+            if(choice.equals("F") || choice.equals("f")){
                 System.out.println(choice + " - Feminino");
                 break;
-            }else if(choiice == "M"){
+            }else if(choice.equals("M") || choice.equals("m")){
                 System.out.println(choice + " - Masculino");
                 break;
             }else{
